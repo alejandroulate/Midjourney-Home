@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Midjourney@Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+
+  <h1>Midjourney@Home</h1>  
+  <blockquote>"The true sign of intelligence is not knowledge but imagination." - Albert Einstein ... probably</blockquote>
+
+
+  <div class="prompt">
+  <h2>AI Image Generator</h2>
+
+  <!--Generador de imagenes-->
+  <label for="textInput"><p>Describe the image you want to generate:</p> </label>
+  <textarea type="text" id="textInput" rows="10" cols="50" wrap="soft"></textarea>  
+  <label for="varInput"><p>Total variations of image:</label>
+  <input type="number" id="varInput" min="1" max="10" value="1" required>
+  <button onclick="RequestImage()">Send</button>
+  <div id="result"></div>
+  
+
+  <!--Accesar Historial-->
+  <button onclick="RequestHistory()" id="historyButton">Access History</button>
+  <div id="historyDiv" ></div>
+
+  <!--Seleccionar Categoría-->
+  <label for="categorySelect"><p>Select a database of our best AI generated images:</p> </label>
+  <select id="categorySelect">
+     <option value="" selected disabled>Select a category</option>
+  </select>
+  <button onclick="subscribeCategory()">Subscribe</button>
+  <div id="showCategory" ></div>
+
+  <!--Cargar Imagen-->
+  <p>Upload image to create variations</p>
+  <input type="file" id="fileInput">
+  <input type="number" id="varfileInput" min="1" max="10" value="1" required>
+  <button onclick="uploadImage()">Upload</button>
+  <div id="newresult"></div>
+
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

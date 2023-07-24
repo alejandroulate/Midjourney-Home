@@ -1,0 +1,118 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  padding: 15px;
+  background-image: url(images/pexels-janez-podnar-1424246.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para hacer el fondo más opaco */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor alfa para hacer la superposición más opaca */
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  max-width: 1200px;
+  color:black;
+
+}
+.container2 {
+  width: 50%; /* Ancho del contenedor 2 */
+  text-align: right;
+  color:white;
+}
+
+.prompt {
+  height: 30vh;
+  max-width: 1500px;
+  text-align: left;
+  color:black;
+}
+
+h1 {
+font-family:"Georgia";
+color:rgb(255, 255, 255);
+line-height: 1.2;
+font-weight: 500;
+font-size: 90px;
+margin-bottom: 5px;
+margin-left: 5px; /* Centra horizontalmente el bloque de cita */
+margin-right: auto;
+margin-top: -300px;
+}
+
+h2 {
+font-family:SpaceGrotesk-Light;
+max-width: 520px;
+text-transform: uppercase;
+color:rgb(255, 255, 255);
+font-size: 16px;
+}
+
+blockquote {
+font-family: 'SpaceGrotesk-Medium';
+color: rgb(255, 255, 255);
+line-height: 1.5;
+font-weight: 500;
+font-size: 22px; /* Tamaño de fuente más pequeño */
+margin-bottom: 30px; /* Espacio inferior más pequeño */
+width: 100%; /* Ajusta el ancho del bloque de cita */
+margin-left: auto; /* Centra horizontalmente el bloque de cita */
+margin-right: auto;
+}
+
+p {
+font-family: 'Arial';
+font-size: 19px;
+font-weight: 400;
+letter-spacing: -0.20px;
+color: rgb(255, 255, 255)
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+
+#description {
+
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  width: 400px;
+  white-space: pre-wrap; /* Permite el retorno de carro automático */
+  word-wrap: break-word; /* Permite el corte de palabras largas */
+  resize: both; /* Permite redimensionar verticalmente el cuadro de texto */
+}
+
